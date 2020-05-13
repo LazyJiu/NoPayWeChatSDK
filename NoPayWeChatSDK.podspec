@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
   s.libraries = "z", "c++", "xml2","resolv",'sqlite3'
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CoreMotion','SystemConfiguration','CoreLocation','CoreTelephony','CoreServices','CoreMedia','Accelerate','CFNetwork', 'CoreGraphics', 'Security'
+  s.frameworks = 'UIKit','WebKit','CoreMotion','SystemConfiguration','CoreLocation','CoreTelephony','CoreServices','CoreMedia','Accelerate','CFNetwork', 'CoreGraphics', 'Security'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
