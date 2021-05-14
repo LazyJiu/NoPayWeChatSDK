@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NoPayWeChatSDK'
-  s.version          = '1.8.7.1'
+  s.version          = '1.8.9'
   s.summary          = 'NoPayWeChatSDK版本与官方版本同步'
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'NoPayWeChatSDK/*.h'
   s.vendored_libraries = 'NoPayWeChatSDK/libWeChatSDK.a'
-  # s.resource_bundles = {
-  #   'BUAdSDKMM' => ['BUAdSDKMM/Assets/*.png']
-  # }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.libraries = "z", "c++", "xml2","resolv",'sqlite3'
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit','WebKit','CoreMotion','SystemConfiguration','CoreLocation','CoreTelephony','CoreServices','CoreMedia','Accelerate','CFNetwork', 'CoreGraphics', 'Security'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
 end
